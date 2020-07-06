@@ -6,6 +6,9 @@
 
 body{
     background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
  .container{
      max-width: 1000px;
@@ -20,4 +23,70 @@ body{
  a{
      text-decoration: none;
  }
+
+/* table */
+.weekly{
+    height: 40vh;
+}
+
+ /* task  */
+ .tasks{
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     height: 40vh;
+     min-width: 60vw;
+     border: 1px solid #444;
+     position: relative;
+     border-radius: 5px;
+
+ }
+
+ .add_task{
+     position: absolute;
+     bottom: 5px;
+     right: 5px;
+     width: 50px;
+     height:50px;
+     border: 1px solid #444;
+     border-radius: 50%;
+     background-color: pink;
+     cursor: pointer;
+ }
+
+ .block{
+     display: flex;
+     background-color: aqua;
+     height: 40px;
+     min-width: 300px;
+     border-radius: 20px;
+ }
  
+
+/* all model */
+.model{
+    visibility: hidden;
+}
+
+ /* add task model */
+ .show{
+     position: absolute;
+     top:350px;
+     left: 50vw;
+     bottom:-100px;
+     width: 70vw;
+     transform: translate(-50%,-50%);
+     z-index: 1000;
+     background-color: azure;
+     visibility: visible;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .close-btn{
+     height: 50px;
+     width: 50px;
+     border: 1px solid #444;
+     border-radius: 50%;
+     font-size: 2em;
+ }
