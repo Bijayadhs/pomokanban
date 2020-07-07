@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="bg-white pr-4 grid grid-cols-8 grid-rows-2 gap-4 h-screen">
+        <div class="sidebar bg-gray-600  h-screen col-start-1 col-end-2 row-start-1"></div>
+        <div class="weekly text-indigo-700 bg-red-300 col-start-2 col-end-9  row-start-1 row-end-2 flex justify-between">
+           <div class="monday">Mon</div>
+           <div class="tuesday">Tue</div>
+           <div class="wednesday">Wed</div>
+           <div class="thursday">Thurs</div>
+           <div class="friday">Fri</div>
+           <div class="saturday">Sat</div>
+           <div class="sunday">Sun</div>
+        </div>
+        <div class="todos bg-gray-100 col-start-2 col-end-9  row-start-2 row-end-3 flex flex-col">
+            <div class="bg-gray-200 m-1 p-2 flex justify-between items-center">
+                <div class="flex text-green-300 pr-4">
+                    <div class="arrow">
+                        <i class="fas fas fa-arrow-right"></i>
+                    </div>
+                    <div class="text-black">React-BradSchiff</div>
+                </div>
+                <div class="border border-xl border-gray-400 rounded-md flex-1 p-1 flex">
+                    <div draggable=true class="cursor-pointer circle w-6 h-6 mr-2  p-1 rounded-full flex items-center justify-center bg-green-400 text-white text-sm font-thin">RD</div>
+                    <div draggable=true class="cursor-pointer circle w-6 h-6 p-1 rounded-full flex items-center justify-center bg-green-400 text-white text-sm font-thin">RD</div>
+                </div>
+            </div>
+            <div class="bg-gray-200 m-1 p-2 flex justify-between items-center">
+                <div class="flex text-green-300 pr-4">
+                    <div class="arrow">
+                        <i class="fas fas fa-arrow-right"></i>
+                    </div>
+                    <div class="text-black">My Own Project</div>
+                </div>
+                <div class="border border-xl border-gray-400 rounded-md flex-1 p-1 flex">
+                    <div draggable=true class="cursor-pointer circle w-6 h-6 mr-2 p-1 rounded-full flex items-center justify-center bg-green-400 text-white text-sm font-thin">MOP</div>
+                    <div draggable=true class="cursor-pointer circle w-6 h-6 p-1 rounded-full flex items-center justify-center bg-green-400 text-white text-sm font-thin">MOP</div>
+                </div>
+            </div>
+            
+
+        </div>
+</div>
+</body>
+</html>
